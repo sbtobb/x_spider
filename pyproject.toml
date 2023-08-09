@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "x-spider"
+version = "0.1.0"
+description = ""
+authors = ["TOBB <tobbcyg@gmail.com>"]
+readme = "README.md"
+packages = [{include = "x_spider"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
+httpx = "^0.24.1"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+sqlalchemy = "^2.0.19"
+PyMySQL = { version = "^1.1.0", extras = ["rsa"] }
+python-multipart = "^0.0.6"
+cryptography = "^41.0.3"
+
+[tool.poetry.dev-dependencies]
+sqlacodegen = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
